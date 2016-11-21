@@ -1,11 +1,10 @@
 ﻿<div>
     <h1>Søk lån</h1>
     <h3>Personlig informasjon</h3>
-    <!--<form class="form-inline">
-        <div class="form-group">-->
-    <!-- test -->
-    <form [formGroup]="Skjema" (ngSubmit)="ConsumerData()">
+    <<form class="form-inline">
+        <div class="form-group">
 
+        
         <label for="Fyll inn navn">Name</label>
         <input [(ngModel)]="navn" type="text" class="form-control" id="nameInput" placeholder="Ola Nordmann" />
 
@@ -28,7 +27,7 @@
         <br />
         <button type="submit" class="btn btn-primary">Lånekalkulator</button>
         <button type="submit" class="btn btn-danger">Send lånesøknad</button>
-
+        </div>
     </form>
 </div>
 
