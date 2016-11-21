@@ -2,9 +2,11 @@
 import { BrowserModule } from "@angular/platform-browser";
 //import { Hallo}   from "./Hallo";
 import { ConsumerLoan } from "./ConsumerLoan";
+import { FormsModule, ReactiveFormsModule} from "@angular/forms";
+
 @NgModule({
 
-    imports: [BrowserModule],
+    imports: [BrowserModule, FormsModule, ReactiveFormsModule],
     declarations: [ConsumerLoan],
     bootstrap: [ConsumerLoan]
 })

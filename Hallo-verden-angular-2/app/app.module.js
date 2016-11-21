@@ -12,12 +12,13 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 //import { Hallo}   from "./Hallo";
 var ConsumerLoan_1 = require("./ConsumerLoan");
+var forms_1 = require("@angular/forms");
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, forms_1.ReactiveFormsModule],
             declarations: [ConsumerLoan_1.ConsumerLoan],
             bootstrap: [ConsumerLoan_1.ConsumerLoan]
         }), 

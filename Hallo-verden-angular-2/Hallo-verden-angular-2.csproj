@@ -142,6 +142,7 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="app\ConsumerData.ts" />
     <TypeScriptCompile Include="app\ConsumerLoan.ts" />
     <TypeScriptCompile Include="app\Hallo.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />

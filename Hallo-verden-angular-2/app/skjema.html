@@ -1,34 +1,34 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
+﻿<div>
     <h1>Søk lån</h1>
     <h3>Personlig informasjon</h3>
-<form class="form-inline">
-    <div class="form-group">
+    <!--<form class="form-inline">
+        <div class="form-group">-->
+    <!-- test -->
+    <form [formGroup]="Skjema" (ngSubmit)="ConsumerData()">
+
         <label for="Fyll inn navn">Name</label>
-        <input type="text" class="form-control" id="nameInput" placeholder="Ola Nordmann" />
-   
+        <input [(ngModel)]="navn" type="text" class="form-control" id="nameInput" placeholder="Ola Nordmann" />
+
         <label for="Fyll inn adresse">Adress</label>
         <input type="text" class="form-control" id="adressInput" placeholder="Pilestredet 35" />
 
         <label for="Fyll inn telefonnummer">Telefonnummer</label>
         <input type="number" class="form-control" id="phoneInput" placeholder="92929292" />
-        
+
         <label for="Fyll inn personnummer">Personnummer</label>
         <input type="number" class="form-control" id="personInput" placeholder="92929292" />
-    </div>
         <h3>Lån</h3>
-    <div class="form-group">
-        <label for="Fyll inn ønsket lånesum"></label>
-        <input type="number" class="form-control" id="adressInput" placeholder="300.000,00" />
-    </div>
+        <div class="form-group">
+            <label for="Fyll inn ønsket lånesum">Lånesum</label>
+            <input type="number" class="form-control" id="adressInput" placeholder="300.000,00" />
 
+            <label for="Antall år nedbetaling">År nedbetaling</label>
+            <input type="number" class="form-control" id="yearInput" placeholder="10" />
+        </div>
         <br />
-        <button type="submit" class="btn btn-primary">Send lånesøknad</button>
-</form>
-</body>
-</html>
+        <button type="submit" class="btn btn-primary">Lånekalkulator</button>
+        <button type="submit" class="btn btn-danger">Send lånesøknad</button>
+
+    </form>
+</div>
+

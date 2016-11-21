@@ -9,10 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var ConsumerData_1 = require("./ConsumerData");
 var ConsumerLoan = (function () {
     function ConsumerLoan() {
-        this.melding = "Take out a loan, player.";
+        this.Consumer = [];
     }
+    ConsumerLoan.prototype.addConsumer = function () {
+        var consumer = new ConsumerData_1.ConsumerData(this.name, this.adress, this.phone, this.person, this.year);
+        this.Consumer.push(consumer);
+    };
     ConsumerLoan = __decorate([
         core_1.Component({
             selector: "consumer",

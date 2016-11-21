@@ -1,14 +1,14 @@
-﻿import {Component} from "@angular/core";
+﻿//import {Component} from "@angular/core";
 
-@Component({
-    selector: "min-app",
-    templateUrl: "./app/skjema.html"
-})
-export class Hallo {
+//@Component({
+//    selector: "min-app",
+//    templateUrl: "./skjema.html"
+//})
+//export class Hallo {
 
-    public melding: string;
+//    public melding: string;
 
-    constructor() {
-        this.melding = "Ferdig å laste, player.";
-    }
-}
+//    constructor() {
+//        this.melding = "Ferdig å laste, player.";
+//    }
+//}
